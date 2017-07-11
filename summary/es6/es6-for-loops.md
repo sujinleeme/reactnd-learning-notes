@@ -116,5 +116,20 @@ for (const digit of digits) {
 }
 ```
 
-* TIP : 모든 값의 집합인 객체에 대해 복수명사를 사용하라. 이렇게 하면 컬렉션을 반복 할 때, 개별 값을 참조할 때 단수명사를 사용할 수있다. (`const digit of digits`)
+* TIP : 모든 값의 집합인 객체에 대해 복수명사를 사용하라. 이렇게 하면 컬렉션을 반복 할 때, 개별 값을 참조할 때 단수명사를 사용할 수 있다. (`const digit of digits`) 
 
+개체에 새 속성을 추가해도, `for ... of` 루프는 객체의 값만 반복한다.
+
+```javascript
+Array.prototype.decimalfy = function() {
+  for (i = 0; i < this.length; i++) {
+    this[i] = this[i].toFixed(2);
+  }
+};
+
+const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (const digit of digits) {
+  console.log(digit);
+}
+```

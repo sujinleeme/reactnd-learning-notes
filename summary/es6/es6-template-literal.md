@@ -7,12 +7,13 @@
 ## 문자열 보간법(string interpolation)
 문자열 보간은 문자열의 자리 표시자가 문자열 변수의 값으로 바뀌는 것이다.
 
-### 1. operator ( + ) 
+### 1. operator (`+`) 
 ex) `'Sujin' + ' have a nice day.'`
 ###2.  concat() : ex) 
 ex)`hello.concat('Sujin', ' have a nice day.')`
-### 3.  `${expression}`co
-주로 `${expression}`를 사용하자
+### 3.  `${expression}`
+주로 `${expression}`를 사용하자.
+
 ex) 
 ```javascript
 const name = 'Sujin';
