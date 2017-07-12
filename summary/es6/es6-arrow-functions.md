@@ -8,12 +8,12 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) {
 });
 ```
 
-1. function 키워드를 제거한다.
-2. 괄호를 제거한다.
-3. 여는 중괄호`(`와 닫는 중괄호`)`를 제거한다.
-4. `return` 키워드를 제거한다. (자동으로 반환된다)
-5. 세미콜론`;`을 제거하십시오.
-* 매개 변수 목록과 함수 본문 사이에 화살표 `(=>)`를 추가한다.
+1. `function` 키워드를 제거한다.
+2. 함수를 감싸는 `()`를 제거한다.
+3. 함수 본문 내 `{}`를 제거한다.
+4. `return` 키워드를 제거한다. (`return`은 자동으로 반환된다)
+5. 세미콜론`;`을 제거한다.
+6. 매개 변수 목록과 함수 본문 사이에 화살표 `(=>)`를 추가한다.
 
 ex) es6
 ```javascript
@@ -23,7 +23,7 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
 ```
 
 ### Arrow Functions 사용법
-일반적인 함수는 함수선언식 또는 표현식으로 쓸 수 있으나, 화살표함수는 표현식으로 작성해야한다.
+일반적인 함수는 함수선언식 또는 표현식으로 쓸 수 있으나, 화살표 함수는 표현식으로 작성해야한다.
 
 #### Function Declarations (함수 선언식)
 ```javascript
@@ -32,8 +32,6 @@ function functionName(arg0, arg1, arg2){ alert("hi"); }
 ```
 함수 선언에서 함수 선언 호이스팅(hosting 끌어올림)됨으로 함수 선언부를 다른 코드보다 먼저 읽고 실행한다.
 그렇기 때문에 함수 선언 전에 functionName()을 호출해도 정상적으로 동작한다.
-
-출처: http://sonim1.tistory.com/142 [피와 살이되는 블로그]
 
 #### Function Expression
 ```javascript
@@ -90,11 +88,11 @@ const bigVowels = vowels.map(letter => letter.toUpperCase());
 # 간결한 본문 구문 (concise body syntax)
 화살표 함수 본문이 한 줄 이상의 코드가 필요하면, `{}` 구문을 사용할 수 있다.
 
-* 중괄호를 사용하여 함수 본문을 감싼다.
+* `()`를 사용하여 함수 본문을 감싼다.
 * `return` 문은 실제로 함수에서 무엇인가를 반환하는 데 사용한다.
 
 ```javascript
-const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
+const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(name => {
   name = name.toUpperCase();
   return `${name} has ${name.length} characters in their name`;
 });
@@ -104,4 +102,5 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
 ```javascript
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(square => square * square);
 console.log(...squares); //1 4 9 16 25 36 49 64 81 100
+
 ```
