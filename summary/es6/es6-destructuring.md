@@ -1,12 +1,12 @@
-# Destructuring
-Destructuring(구조분해)은 Perl과 Python과 같은 언어에서 영감을 받았다. 배열이나 객체에서 왼쪽부터 추출하려는 요소를 지정할 수 있다. 코드가 간결해지고 이해하기 쉽다.
+# 구조 해체(Destructuring)
+Destructuring(구조 해체, 구조 분해)은 Perl과 Python과 같은 언어에서 영감을 받았다. 배열이나 객체에서 왼쪽부터 추출하려는 요소를 지정할 수 있다. 코드가 간결해지고 이해하기 쉽다.
 
 ```javascript
 const point = [10, 25, -34];
 const [x, y, z] = point;
 ```
 
-* 특정 요소 지정 하지 않을 시 : `const [x, , z] = point;` y 값을 할당하지 않는다.
+* 특정 요소 지정 하지 않을 시 : `const [x, , z] = point;` `y` 값을 할당하지 않는다.
 
 ## 객체에서 구조분해 (Destructuring values from an object)
 ```javascript

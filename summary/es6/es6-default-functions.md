@@ -118,7 +118,7 @@ createSundae([undefined, toppings: ['Hot Fudge', 'Sprinkles', 'Caramel']]);
 
 따라서 배열 기본값을 사용해야하는 명백한 이유가 없다면, 객체 기본값을 사용하는 것이 바람직하다.
 
-###### 실습
+###### 실습 예제
 ```javascript
 /*
  * Programming Quiz: Using Default Function Parameters (2-2)

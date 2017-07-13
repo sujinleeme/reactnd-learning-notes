@@ -17,7 +17,7 @@ function getClothing(isCold) {
 
 호이스팅(Hoisting)은 브라우저에서 Javascript를 해석할 때, JavaScript 코드가 실행되기 전에 함수 스코프의 맨 위로 모든 변수가 "끌어올라간다 (hoisted)". 런타임 시,  `getClothing()` 함수는 실제로 다음과  같이 실행된다.
 
-```
+```javascript
 function getClothing(isCold) {
 	var freezing, hot;
 	if (isCold) {

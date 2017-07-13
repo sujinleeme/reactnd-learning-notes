@@ -90,7 +90,7 @@ function sum(...nums) {
 
 인자가 명확해졌고 읽기가 쉬워졌다.
 
-#### Practice
+###### 실습 예제
 ```javascript
 const average = (...nums) => {
   let total = 0;  
