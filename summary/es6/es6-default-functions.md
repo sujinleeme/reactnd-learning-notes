@@ -1,5 +1,5 @@
 # 기본 함수 매개 변수(Default function parameters)
-함수 매개 변수(function parameters)에 기본값(Default)을 지정해 각 함수 파라미터 리스트를 파악할 수 있다.
+함수 `매개 변수(function parameters)`에 `기본값(Default)`을 지정해 각 함수 파라미터 리스트를 파악할 수 있다.
 
 ex. 1
 ```javascript
@@ -13,7 +13,7 @@ greet(); // Welcome Student!
 greet('James'); // Welcome James!
 greet('Richard', 'Howdy'); // Howdy Richard!
 ```
-예제 1에서 기본 매개 변수를 만들려면 등호(=)를 추가하고, 인자가 제공되지 않은 경우 매개 변수의 기본값을 지정한다.
+예제 1에서 기본 매개 변수를 만들려면 등호(`=`)를 추가하고, 인자가 제공되지 않은 경우 매개 변수의 기본값을 지정한다.
 
 ex. 2
 ```javascript
@@ -75,6 +75,7 @@ createSundae({toppings: ['Cookie Dough']}); // Your sundae has 1 scoop with Cook
 ```
 
 인자없이 함수를 호출하면 기본값이 없기 때문에 에러가 발생한다.
+
 ```javascript
 createSundae(); // throws an error
 ```

@@ -30,8 +30,8 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
 functionName();
 function functionName(arg0, arg1, arg2){ alert("hi"); }
 ```
-함수 선언에서 함수 선언 호이스팅(hosting 끌어올림)됨으로 함수 선언부를 다른 코드보다 먼저 읽고 실행한다.
-그렇기 때문에 함수 선언 전에 functionName()을 호출해도 정상적으로 동작한다.
+함수 선언에서 함수 선언 __호이스팅(hosting 끌어올림)__ 됨으로 함수 선언부를 다른 코드보다 먼저 읽고 실행한다.
+그렇기 때문에 함수 선언 전에 `functionName()`을 호출해도 정상적으로 동작한다.
 
 #### Function Expression
 ```javascript
@@ -98,7 +98,7 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(name => {
 });
 ``` 
 
-###### 실습 예제
+###### 실습문제
 ```javascript
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(square => square * square);
 console.log(...squares); //1 4 9 16 25 36 49 64 81 100

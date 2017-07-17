@@ -111,7 +111,7 @@ const myToy1 = Toy(); // throws an error
 const myToy2 = new Toy(); // this works!
 ```
 
-#Subclasses
+# Subclasses
 
 ```javascript
 class Tree {
