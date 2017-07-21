@@ -11,7 +11,7 @@
 ex) `'Sujin' + ' have a nice day.'`
 ###2.  concat() : ex) 
 ex)`hello.concat('Sujin', ' have a nice day.')`
-### 3.  `${expression}`
+### 3.  ㅊ
 주로 `${expression}`를 사용하자.
 
 ex) 

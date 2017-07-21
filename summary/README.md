@@ -1,8 +1,13 @@
 # 목차
 
+## React
+* React Composition
+* Rendering UI
+* State 관리
+
 ## ES6
 ### Syntax 문법
-* [let, const](/es6/es6-let-and-const.md)
+* [let, const](./es6/es6-let-and-const.md)
 * Template Literals 템플릿 리터럴
 * Destructing 객체 해체
 * Object Literal 객체 리터럴

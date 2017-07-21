@@ -93,7 +93,7 @@ console.log(arrayIterator.next()); //Object {value: 1, done: false}
 console.log(arrayIterator.next()); //Object {value: 2, done: false}
 ```
 
-####### 연습문제
+###### 실습문제
 ```javascript
 /*
  * Programming Quiz: Make An Iterable Object
@@ -113,7 +113,7 @@ const james = {
     height: `5'10"`,
     weight: 185,
     [Symbol.iterator]: () => {
-        let nextIndex = 0s
+        let nextIndex = 0;
         return {
             next: () => {
                 let key = Object.keys(james)[nextIndex++]
