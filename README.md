@@ -7,7 +7,11 @@
 * [학습 내용 요약](https://github.com/sujinleeme/udacity-react/tree/master/summary)
 * [번역](https://github.com/sujinleeme/udacity-react/tree/master/translation)
 
+## 수강후기 블로그
+* [유다시티, 나노디그리 프로그램 살펴보기 - $500로 떠나는 실리콘밸리 코딩교육, 리액트 나노디그리를 중심으로](https://brunch.co.kr/@sujinleeme/9)
 
-## 블로그
-[유다시티, 나노디그리 프로그램 살펴보기 - $500로 떠나는 실리콘밸리 코딩교육, 리액트 나노디그리를 중심으로](https://brunch.co.kr/@sujinleeme/9)
+
+## 프로젝트
+1. MyReads: A Book Lending App (진행 중)
+
 
