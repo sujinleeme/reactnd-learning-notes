@@ -16,14 +16,19 @@
 
 
 ## React
-* [함수 컴포지션](react-fundamental/react-composition.md)
-* [State](eact-fundamental/react-state.md)
-* [Components 제어](react-fundamental/react-controlledcomponent.md)
-* [Debugging](react-fundamental/react-debugging.md)
-* [UI 렌더링](react-fundamental/react-rendering-ui.md)
-* [외부데이터와 UI 렌더링](react-fundamental/react-rendering-ul-with-external-data.md)
-* [Router](react-fundamental/react-router.md)
+* [함수 컴포지션](course/react-fundamental/react-composition.md)
+* [State](course/eact-fundamental/react-state.md)
+* [Components 제어](course/react-fundamental/react-controlledcomponent.md)
+* [Debugging](course/react-fundamental/react-debugging.md)
+* [UI 렌더링](course/react-fundamental/react-rendering-ui.md)
+* [외부데이터와 UI 렌더링](course/react-fundamental/react-rendering-ul-with-external-data.md)
+* [Router](course/react-fundamental/react-router.md)
 
 ## Redux
-* [Redux 개요](redux/redux-intro.md)
+* [Redux 개요](course/redux/redux-intro.md)
+* [Redux Reducers](course/redux/redux-reducers.md)
+* [Redux Action](course/redux/redux-action.md)
+* [Redux Store](course/redux/redux-store.md)
+* [Redux Redux](course/redux/redux-redux.md)
+
 

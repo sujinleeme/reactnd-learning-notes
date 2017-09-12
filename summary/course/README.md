@@ -12,4 +12,7 @@
 
 ## Redux
 * [Redux 개요](redux/redux-intro.md)
-
+* [Redux Reducers](redux/redux-reducers.md)
+* [Redux Action](redux/redux-action.md)
+* [Redux Store](redux/redux-store.md)
+* [Redux Redux](redux/redux-redux.md)
