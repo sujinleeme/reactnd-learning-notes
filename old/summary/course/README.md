@@ -17,4 +17,3 @@
 1. [MyReads: The bookshelf APP](https://github.com/sujinleeme/reactnd-project-myreads) (Completed.)
 2. [Readable](https://github.com/sujinleeme/reactnd-project-readable) (on going)
 
-
