@@ -300,3 +300,119 @@ function draw(element, config) {
 
 draw(null, {margin: 0, padding: 0});
 ```
+
+## 1.5 All about `this`
+
+Function definition des not matter. From where the function is called matters.
+
+```js
+var 9 = 92;
+
+var obj = {
+  a: 1,
+  b: 2,
+  c: 3
+}
+
+function test() {
+  console.log(this.a); // 92
+}
+
+test();
+
+obj.test = test;
+obj.test(); // 1
+```
+
+Let's change `var 9 = 92` to `let a = 92`.
+
+```js
+// var 9 = 92;
+let a = 92;
+var obj = {
+  a: 1,
+  b: 2,
+  c: 3
+}
+
+function test() {
+  console.log(this.a); // undefined
+  //  this is bound to the window object by default.
+}
+
+test();
+
+obj.test = test;
+obj.test(); // 1
+```
+
+*Variables declared with `let` are not part of the global object.*
+
+How to bind to this in object? Explicitly, Use`call()` or `apply()` to bind `this` for the function call.
+
+```js
+var a = 92;
+
+var obj = {
+  a:1,
+  b:2,
+  c:3
+}
+
+function test() {
+  console.log(this.a);
+}
+
+test.call(obj) // 1
+test.apply(obj) // 1
+```
+
+What If you need to pass a function as a callback and you want to explicitly bind this?
+`call()` and `apply()` is not solution.
+
+* Reading resources
+  * Javascript Function Methods: Call vs Apply vs Bind](https://medium.com/@jhawleypeters/javascript-call-vs-apply-vs-bind-61447bc5e989)
+
+
+**Hard binding**
+
+```js
+var obj = {
+    a: 1,
+    b: 2, 
+    c: 3
+}
+
+function test() {
+    console.log(this.a);
+    console.log(this.b);
+    console.log(this.c);
+}
+
+function callMeLater(cb) {
+    setTimeout(()=> {
+        cb();
+    }, 3000);
+}
+
+callMeLater(test); // undefined
+callMeLater(test.bind(obj)); // 1, 2, 3
+```
+
+`.bind()` does not call the function. It returns a reference to the function with this keyword set to the object.
+
+**What's `new`?**
+
+```js
+function Person(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    console.log(this);
+}
+
+let p = new Person("John", "Smith", 43);
+console.log(p);
+```
+
+When you using the new keyword to instantiate a new objet, inside the constructor function's this keyword will point to newly constructed object returned by default.
